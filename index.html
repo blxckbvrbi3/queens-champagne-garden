@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Queens Champagne Garden | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Bubble Animation Container (for background bubbles) -->
+  <div class="bubble-bg-container" id="bubble-bg-container"></div>
+  <!-- Promotion Popup -->
+  <div id="promo-popup" class="promo-popup">
+    <div class="promo-popup-content">
+      <span class="promo-close" id="promo-close">&times;</span>
+      <div class="promo-image-container">
+        <img id="promo-img" src="" alt="Promotion" />
+      </div>
+    </div>
+  </div>
+  <!-- Header with Logo -->
+  <header class="site-header">
+  <div class="header-flex">
+    <div class="logo-container">
+      <img src="media/images/logo-gold.png" alt="Restaurant Logo" class="site-logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-label="Open navigation">&#9776;</button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/food_menu.html">Food Menu</a></li>
+        <li><a href="pages/drinks_menu.html">Bar Menu</a></li>
+        <li><a href="pages/wine_champagne_menu.html">Wines & Champagnes Menu</a></li>
+        <li><a href="pages/pipe_menu.html">Pipe Menu</a></li>
+        <li><a href="pages/contact_us.html">Contact Us</a></li>
+        <div class="social-icons">
+          <a class="social-link" href="https://web.facebook.com/profile.php?id=100083173486821" target="_blank" title="Facebook">
+            <img src="../media/images/facebook.png" alt="Facebook Icon">
+          </a>
+          <a class="social-link" href="https://instagram.com/qcg_restaurant" target="_blank" title="Instagram">
+            <img src="../media/images/instagram.png" alt="Instagram Icon">
+          </a>
+          <a class="social-link" href="https://wa.me/27747557576" target="_blank" title="WhatsApp">
+            <img src="../media/images/whatsapp.png" alt="WhatsApp Icon">
+          </a>
+        </div>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <!-- Banner Slideshow -->
+  <section class="banner-section">
+    <div class="banner-slideshow">
+      <div class="slide active">
+        <img src="media/images/banner04.png" alt="Special 1">
+      </div>
+      <div class="slide">
+        <img src="media/images/banner01.png" alt="Special 2">
+      </div>
+      <div class="slide">
+        <img src="media/images/banner05.png" alt="Special 3">
+      </div>
+      <div class="slide">
+        <img src="media/images/banner02.png" alt="Special 4">
+      </div>
+      <div class="slide">
+        <img src="media/images/banner06.png" alt="Special 5"> 
+        </div>
+        <div class="slide">
+        <img src="media/images/banner03.png" alt="Special 6"> 
+        </div>
+    </div>
+  </section>
+
+  <!-- Update the banner-actions section as follows: -->
+<section class="banner-actions">
+  <button class="banner-btn browse-menu-btn" onclick="document.getElementById('menu-grid').scrollIntoView({behavior:'smooth'});">Browse Menu</button>
+  <button class="banner-btn contact-us-btn" onclick="window.location.href='pages/contact_us.html';">Contact Us</button>
+</section>
+
+  <!-- Feature Section: Large heading left, large image right -->
+  <section class="feature-section">
+    
+    <div class="feature-left">
+      <h2 class="feature-heading">
+        <span class="feature-intro">Experience the Best of</span>
+        <span class="feature-highlight">Queens Champagne Garden</span>
+      </h2>
+    </div>
+    <div class="feature-right">
+      <img class="feature-image" src="media/images/feature1.png" alt="Queens Champagne Garden">
+    </div>
+  </section>
+
+  <!-- New Section: Specials -->
+  <section class="feature-section">
+    <div class="feature-left">
+      <h2 class="feature-heading">
+        <span class="feature-intro">With great Food and drink Specials Daily Between 11h00 and 19h00</span>
+      </h2>
+    </div>
+    <div class="feature-right">
+      <img class="feature-image" src="media/gifs/gif1.gif" alt="Specials Daily">
+    </div>
+  </section>
+ <!-- Update the menu-grid section to have an id for scrolling: -->
+<section class="menu-grid" id="menu-grid">
+  <div class="grid-container">
+    <a href="pages/drinks_menu.html" onclick="window.location.href='pages/drinks_menu.html';" class="menu-card">
+      <div class="card-overlay">
+        <h3>View Bar Menu</h3>
+      </div>
+    </a>
+    <a href="pages/wine_champagne_menu.html" onclick="window.location.href='pages/wine_champagne_menu.html';" class="menu-card">
+      <div class="card-overlay">
+        <h3>View Wine List</h3>
+      </div>
+    </a>
+    <a href="pages/food_menu.html" onclick="window.location.href='pages/food_menu.html';" class="menu-card">
+      <div class="card-overlay">
+        <h3>View Food Menu</h3>
+      </div>
+    </a>
+    <a href="pages/contact_us.html" onclick="window.location.href='pages/contact_us.html';" class="menu-card">
+      <div class="card-overlay">
+        <h3>Contact Us</h3>
+      </div>
+    </a>
+  </div>
+</section>
+
+
+
+  <!-- New Section: Fun and Drinks -->
+  <section class="feature-section">
+    <div class="feature-left">
+      <h2 class="feature-heading">
+        <span class="feature-intro">With great fun And loads of drinks...</span>
+      </h2>
+    </div>
+    <div class="feature-right">
+      <img class="feature-image" src="media/images/feature3.png" alt="Fun and Drinks">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="pages/food_menu.html">Food Menu</a>
+      <a href="pages/drinks_menu.html">Bar Menu</a>
+      <a href="pages/wine_champagne_menu.html">Wine & Champagne Menu</a>
+      <a href="pages/pipe_menu.html">Pipe Menu</a>
+    </div>
+    <div class="contact-info">
+      <p>12 Stockdale St, Kimberley, 8300 • City Centre, New Park</p>
+      <p>Mon–Thu 10:00–22:30 • Fri–Sat 10:00–00:00 • Sun 10:00–22:30</p>
+      <p>Designed by <a href="www.linkedin.com/in/blxckbvrbi3" style="color:#fff;"> Onil Chibaya</a> • 📞 +27 74 755 7576 • ✉️ info@kimberleyqueenshotel.co.za</p>
+      <p>Created by Mariska@glixiemedia.co.za. Proudly Hosting with InteliHost. Copyright &copy; 2024 Glixie Media t/u HOUSE OF PIXELS (PTY) LTD Group of Companies, All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
